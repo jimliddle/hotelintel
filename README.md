@@ -1,6 +1,9 @@
 # 🏨 Jim's Hotel Intelligence AI
 
-I created this because I was sick of trawling the web comparing hotel reviews when we were looking to book a holiday. It is a professional-grade, privacy-focused hotel and resort research tool. It leverages the **Gemini 2.5 Flash** model and the **Tavily Search API** to synthesize objective, data-driven reviews from TripAdvisor, YouTube, travel blogs, and Reddit - all within a secure, client-side environment.
+I created this because I was sick of trawling the web comparing hotel reviews when we were looking to book a holiday. It is a professional-grade, privacy-focused hotel and resort research tool. It leverages the **Gemini 2.5 Flash** model and the **Tavily Search API** to synthesize objective, data-driven reviews from TripAdvisor, YouTube, travel blogs, and Reddit - all within a secure, client-side environment. Accessible at: https://jimliddle.github.io/hotelintel/
+
+<img width="921" height="512" alt="screenshot" src="https://github.com/user-attachments/assets/5ddb8e7d-480b-4858-a8d1-7aac5e5fef38" />
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Architecture: Client-Side](https://img.shields.io/badge/Architecture-Client--Side-green)
