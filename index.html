@@ -199,10 +199,17 @@
 
                 <div class="border-t border-gray-200 pt-4">
                     <h4 class="text-sm font-semibold text-gray-800 mb-3">Import Data</h4>
-                    <input type="file" id="import-file" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-3" accept=".enc,.json,application/octet-stream,text/plain,*/*">
-                    <button onclick="importEncryptedHistory()" class="w-full bg-blue-100 hover:bg-blue-200 text-blue-700 py-2 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
-                        <i class="fa-solid fa-upload"></i> Restore Backup
-                    </button>
+                    <input type="file" id="import-file" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-4" accept=".enc,.json,application/octet-stream,text/plain,*/*">
+                    
+                    <div class="grid grid-cols-2 gap-3">
+                        <button onclick="importEncryptedHistory(true)" class="bg-blue-100 hover:bg-blue-200 text-blue-700 py-2.5 rounded-lg font-bold text-xs transition-colors flex items-center justify-center gap-2 uppercase tracking-wider">
+                            <i class="fa-solid fa-layer-group"></i> Merge
+                        </button>
+                        <button onclick="importEncryptedHistory(false)" class="bg-red-50 hover:bg-red-100 text-red-600 py-2.5 rounded-lg font-bold text-xs transition-colors flex items-center justify-center gap-2 border border-red-100 uppercase tracking-wider">
+                            <i class="fa-solid fa-eraser"></i> Replace
+                        </button>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mt-2 italic text-center">Merge adds to current history. Replace deletes current history first.</p>
                 </div>
             </div>
         </div>
